@@ -289,7 +289,8 @@ class VideoPlayer:
             self.start_x, self.start_y = event.x, event.y
 
     
-    # 處理用戶在畫布上拖動鼠標的事件，並用於在畫布上繪製選擇框def on_mouse_drag(self, event):
+    # 處理用戶在畫布上拖動鼠標的事件，並用於在畫布上繪製選擇框
+    def on_mouse_drag(self, event):
         # 只有在非追蹤模式下，才允許進行選擇框的繪製
         if not self.tracking and self.start_x and self.start_y:
             # 刪除先前繪製的矩形，這樣在每次拖動時，只顯示當前的選擇框
